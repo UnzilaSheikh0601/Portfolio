@@ -12,7 +12,13 @@ body {
 
 :root {
     scroll-behavior: smooth;
+    
+  /* --primary: #2b2d42;
+  --secondary: #edf2f4;
+  --tertiary: #8d99ae; */
 }
+
+
 
 /* Navbar */
 nav {
@@ -158,14 +164,6 @@ section {
 
 /* Limit width ONLY for content sections */
 
-/* #about,
-#projects,
-#contact {
-    max-width: 1200px;
-    margin: 70px 0px;
-    border: 2px solid white;
-} */
-
 section h2 {
     margin-top: 30px;
     margin-bottom: 20px;
@@ -193,18 +191,27 @@ section p {
     background-repeat: no-repeat;
 }
 
+.skills{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(auto-fit, 1fr);
+    gap: 8px;
+}
+
 .skills span {
     display: inline-block;
     background: #0b0210;
     padding: 12px 18px;
     margin: 6px;
+    text-align: center;
     border-radius: 6px;
-    border: 1px solid #a0c3d2;
+    box-shadow: 0 0 10px rgba(224, 246, 255, 0.5);
     transition: transform 0.3s, background 0.3s;
 }
 
 .skills span:hover {
-    transform: translateY(-3px);
+    /* transform: translateY(-3px); */
+    transform: scale(1.1);
     background: #180920;
     cursor: -webkit-grabbing;
 }
@@ -226,7 +233,7 @@ section p {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-
+    box-shadow: 0 0 10px rgba(224, 246, 255, 0.5);
     padding: 25px;
     margin-bottom: 20px;
     border-radius: 10px;
@@ -241,7 +248,7 @@ section p {
 }
 
 .project-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-2px) scale(1.03);
     background: #0b02109d;
     box-shadow: 0 0 10px rgba(224, 246, 255, 0.344);
 }
@@ -262,7 +269,6 @@ section p {
     width: 100%;
     max-width: 1200px;
     margin: auto;
-
 }
 
 .project-card img {
