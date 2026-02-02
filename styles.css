@@ -58,9 +58,20 @@ nav ul li a:hover {
     translate: 3px 0px 3px 0px;
 }
 
-.logo {
+.logo{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+#logo-img{
+    box-shadow: 0 0 10px #e5e7eb;
+    border-radius: 50%;
+}
+
+#logo-text {
     color: #a0c3d2;
-    font-size: 40px;
+    font-size: 30px;
 }
 
 .btn {
