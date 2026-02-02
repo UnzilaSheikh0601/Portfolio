@@ -12,8 +12,8 @@ body {
 
 :root {
     scroll-behavior: smooth;
-    
-  /* --primary: #2b2d42;
+
+    /* --primary: #2b2d42;
   --secondary: #edf2f4;
   --tertiary: #8d99ae; */
 }
@@ -58,15 +58,16 @@ nav ul li a:hover {
     translate: 3px 0px 3px 0px;
 }
 
-.logo{
+.logo {
     display: flex;
     gap: 30px;
     align-items: center;
 }
 
-#logo-img{
+#logo-img {
     box-shadow: 0 0 10px #e5e7eb;
     border-radius: 50%;
+    height: 50px;
 }
 
 #logo-text {
@@ -145,6 +146,7 @@ nav ul li a:hover {
 .home span {
     color: #a0c3d2;
 }
+
 .home p {
     font-size: large;
 }
@@ -202,11 +204,14 @@ section p {
     background-repeat: no-repeat;
 }
 
-.skills{
+.skills {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(auto-fit, 1fr);
     gap: 8px;
+    max-width: 1200px;
+    margin: auto;
+    width: 100%;
 }
 
 .skills span {
@@ -289,7 +294,7 @@ section p {
 }
 
 
-#about p{
+#about p {
     text-align: justify;
 
 }
@@ -417,29 +422,44 @@ footer {
         text-align: center;
     }
 
-    .logo {
+    #logo-img {
+    height: 30px;
+}
+
+    #logo-text {
         font-size: 28px;
     }
 
     section {
         padding: 50px 30px;
     }
+
+    .skills {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
 }
 
 /* Small phones */
 @media (max-width: 480px) {
-    .logo {
+
+        #logo-img {
+    height: 26px;
+}
+
+    #logo-text {
         font-size: 24px;
     }
 
     .nav-menu {
         top: 60px;
     }
+
 }
 
 /* Tablets */
 @media (min-width: 481px) and (max-width: 900px) {
-    .logo {
+    #logo-text {
         font-size: 28px;
     }
 }
