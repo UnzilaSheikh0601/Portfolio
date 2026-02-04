@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
@@ -184,8 +186,11 @@ section h2 {
 }
 
 section p {
-    max-width: 700px;
     line-height: 1.7;
+}
+
+#about{
+    background: linear-gradient(180deg, #01050c, #0b0210);
 }
 
 
@@ -216,13 +221,14 @@ section p {
 
 .skills span {
     display: inline-block;
-    background: #0b0210;
+    background: linear-gradient(180deg, #01050c, #0b0210);
     padding: 12px 18px;
     margin: 6px;
     text-align: center;
+    align-self: center;
     border-radius: 6px;
     box-shadow: 0 0 10px rgba(224, 246, 255, 0.5);
-    transition: transform 0.3s, background 0.3s;
+    transition: transform 0.3s, background 1s;
 }
 
 .skills span:hover {
@@ -269,10 +275,10 @@ section p {
     box-shadow: 0 0 10px rgba(224, 246, 255, 0.344);
 }
 
-.project-card a {
+/* .project-card a {
     color: #a0c3d2;
     text-decoration: none;
-}
+} */
 
 .project-card p {
     text-align: justify;
@@ -293,6 +299,30 @@ section p {
     margin-bottom: 15px;
 }
 
+.project-card img:hover{
+    transform: scale(1.05);
+}
+
+.project-card .git-btn {
+    margin-top: auto;
+}
+
+.git-btn{
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 16px;
+    background: #a0c3d2;
+    color: #01050c;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 600;
+    border-radius: 20px;
+    transition: 0.3s ease;
+}
+
+.git-btn:hover{
+    transform: scale(1.05);
+}
 
 #about p {
     text-align: justify;
