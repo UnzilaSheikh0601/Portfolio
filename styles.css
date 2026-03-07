@@ -138,7 +138,7 @@ nav ul li a:hover {
     background:
         linear-gradient(rgba(1, 5, 12, 0.95),
             rgba(1, 5, 12, 0.85)),
-        url("images/home-bg.jpg");
+        url("images/home_bg.jpg");
 
     background-size: cover;
     background-position: center;
@@ -203,7 +203,7 @@ section p {
     background:
         linear-gradient(rgba(1, 5, 12, 0.85),
             rgba(1, 5, 12, 0.85)),
-        url("images/skills-bg.jpg");
+        url("images/skills_bg.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -250,7 +250,7 @@ section p {
     background:
         linear-gradient(rgba(1, 5, 12, 0.75),
             rgba(1, 5, 12, 0.85)),
-        url("images/pro-card-bg.jpg");
+        url("images/pro_card_bg.jpg");
 
     background-size: cover;
     background-position: center;
@@ -338,7 +338,7 @@ section p {
     background:
         linear-gradient(rgba(1, 5, 12, 0.95),
             rgba(1, 5, 12, 0.85)),
-        url("images/contact-bg.jpg");
+        url("images/contact_bg.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
