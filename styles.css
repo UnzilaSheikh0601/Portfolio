@@ -169,6 +169,7 @@ nav ul li a:hover {
 .hero-copy {
     position: relative;
     z-index: 1;
+    width: min(100%, 840px);
     max-width: 840px;
     margin: 0 auto;
     padding: 40px 36px;
@@ -625,8 +626,9 @@ footer {
         gap: 12px;
     }
 
-    #logo-img {
-        height: 36px;
+    .hero-copy {
+        padding: 28px 20px;
+        border-radius: 24px;
     }
 
     #logo-text {
